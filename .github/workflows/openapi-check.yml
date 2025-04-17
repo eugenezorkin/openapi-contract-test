@@ -1,0 +1,15 @@
+name: OpenAPI Check
+
+on:
+  push:
+    paths:
+      - 'openapi.yaml'
+  pull_request:
+    paths:
+      - 'openapi.yaml'
+
+jobs:
+  openapi-check:
+    uses: eugenezorkin/openapi-ci-checks/.github/workflows/lint-openapi.yml@main
+    with:
+      spec_path: openapi.yaml
