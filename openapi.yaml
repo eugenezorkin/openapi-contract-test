@@ -56,7 +56,7 @@ paths:
       - pet
       summary: Update an existing pet
       description: Update an existing pet by Id
-      operationId: updatePet
+      #operationId: updatePet
       requestBody:
         description: Update an existent pet in the store
         content:
@@ -802,7 +802,7 @@ components:
       description: List of user object
       content:
         application/json:
-          schema2:
+          schema:
             type: array
             items:
               $ref: '#/components/schemas/User'
