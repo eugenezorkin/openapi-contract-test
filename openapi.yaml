@@ -802,7 +802,7 @@ components:
       description: List of user object
       content:
         application/json:
-          schema:
+          schema2:
             type: array
             items:
               $ref: '#/components/schemas/User'
